@@ -3,7 +3,11 @@ label {
   margin-top: 10px;
 }
 
-input {
+input, textarea {
   border: none;
   font-size: 12pt;
+}
+
+.red {
+  color:red;
 }

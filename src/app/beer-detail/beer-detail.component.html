@@ -4,8 +4,8 @@
 
 
   <div>
-    <label>Pints:
-      <input [(ngModel)]="beer.pint" placeholder="pint">
+    <label >Pints:
+      <input [(ngModel)]="beer.pint" placeholder="pint" [ngClass]="{'red': beer.pint<10}">
     </label>
     <button type="button" (click)="subtractPint()" name="button">Pull Pint</button>
     <label>Name:
@@ -15,7 +15,8 @@
       <input [(ngModel)]="beer.brand" placeholder="brand">
     </label>
     <label>Description:
-      <input [(ngModel)]="beer.description" placeholder="description">
+      <br>
+      <textarea [(ngModel)]="beer.description" placeholder="description"></textarea>
     </label>
     <label>Price:
       <input [(ngModel)]="beer.price" placeholder="price">
