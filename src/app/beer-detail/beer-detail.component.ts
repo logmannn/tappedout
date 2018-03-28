@@ -14,4 +14,8 @@ export class BeerDetailComponent implements OnInit {
   ngOnInit() {
   }
 
+  subtractPint() {
+    this.beer.pint = this.beer.pint-1;
+  }
+
 }

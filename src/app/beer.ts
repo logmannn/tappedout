@@ -5,4 +5,5 @@ export class Beer {
   price: number;
   alcoholContent: number;
   description: string;
+  pint: number;
 }

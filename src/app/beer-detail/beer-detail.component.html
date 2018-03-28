@@ -1,9 +1,13 @@
 <div *ngIf="beer">
 
   <h2>{{ beer.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{beer.id}}</div>
+
 
   <div>
+    <label>Pints:
+      <input [(ngModel)]="beer.pint" placeholder="pint">
+    </label>
+    <button type="button" (click)="subtractPint()" name="button">Pull Pint</button>
     <label>Name:
       <input [(ngModel)]="beer.name" placeholder="name">
     </label>
@@ -17,8 +21,9 @@
       <input [(ngModel)]="beer.price" placeholder="price">
     </label>
     <label>ABV:
-      <input [(ngModel)]="beer.abv" placeholder="abv">
+      <input [(ngModel)]="beer.alcoholContent" placeholder="abv">
     </label>
+
   </div>
 
 </div>
