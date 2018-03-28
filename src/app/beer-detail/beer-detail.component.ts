@@ -15,7 +15,7 @@ export class BeerDetailComponent implements OnInit {
   }
 
   subtractPint() {
-    this.beer.pint = this.beer.pint-1;
+    if (this.beer.pint > 0) {this.beer.pint-1;}
   }
 
 }
