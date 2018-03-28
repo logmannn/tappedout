@@ -17,10 +17,12 @@ export class BeersComponent implements OnInit {
   constructor(private beerService: BeerService) { }
 
   ngOnInit() {
-    this.getBeers()
+    this.getBeers();
+    this.selectedBeer = this.beers[0];
   }
 
   onSelect(beer: Beer): void{
+    console.log(beer);
     this.selectedBeer = beer;
   }
 

@@ -3,11 +3,21 @@ label {
   margin-top: 10px;
 }
 
-input, textarea {
+input {
   border: none;
   font-size: 12pt;
 }
 
+textarea {
+  font-size: 12pt;
+  max-width: 400px;
+  width: 100%;
+}
+
 .red {
   color:red;
+}
+
+.green {
+  color: green
 }

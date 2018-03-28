@@ -1,11 +1,16 @@
-<h2>My Kegs</h2>
+<div class="col-sm-3">
+  <h2>My Kegs</h2>
 
-<ul class="beers">
-  <li *ngFor="let beer of beers"
-    [class.selected]="beer === selectedBeer"
-    (click)="onSelect(beer)">
-    <span class="badge">{{beer.id}}</span> {{beer.name}}
-  </li>
-</ul>
-
-<app-beer-detail [beer]="selectedBeer"></app-beer-detail>
+  <ul class="beers">
+    <li *ngFor="let beer of beers;let i = index;"
+      [class.selected]="beer === selectedBeer"
+      (click)="onSelect(beer)">
+      <span class="badge">{{i}}</span> <span [ngClass]="{'strongBeer': beer.alcoholContent>10}">{{beer.name}}</span>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-1">
+</div>
+<div class="col-sm-8">
+  <app-beer-detail [beer]="selectedBeer"></app-beer-detail>
+</div>

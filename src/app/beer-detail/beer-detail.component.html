@@ -19,10 +19,10 @@
       <textarea [(ngModel)]="beer.description" placeholder="description"></textarea>
     </label>
     <label>Price:
-      <input [(ngModel)]="beer.price" placeholder="price">
+      <input [(ngModel)]="beer.price" placeholder="price" [ngClass]="{'green': beer.price<5}">
     </label>
     <label>ABV:
-      <input [(ngModel)]="beer.alcoholContent" placeholder="abv">
+      <input [(ngModel)]="beer.alcoholContent" placeholder="abv" [ngClass]="{'red': beer.alcoholContent>10}">
     </label>
 
   </div>
