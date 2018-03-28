@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
-import { DogsComponent } from './dogs/dogs.component';
-import { DogDetailComponent } from './dog-detail/dog-detail.component';
-import { DogService } from './dog.service';
+import { BeersComponent } from './beers/beers.component';
+import { BeerDetailComponent } from './beer-detail/beer-detail.component';
+import { BeerService } from './beer.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 
@@ -13,8 +13,8 @@ import { MessageService } from './message.service';
 @NgModule({
   declarations: [
     AppComponent,
-    DogsComponent,
-    DogDetailComponent,
+    BeersComponent,
+    BeerDetailComponent,
     MessagesComponent
   ],
   imports: [
@@ -22,7 +22,7 @@ import { MessageService } from './message.service';
     FormsModule
   ],
   providers: [
-    DogService,
+    BeerService,
     MessageService
   ],
   bootstrap: [AppComponent]
