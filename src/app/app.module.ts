@@ -8,6 +8,8 @@ import { BeerDetailComponent } from './beer-detail/beer-detail.component';
 import { BeerService } from './beer.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { RogerComponent } from './roger/roger.component';
+import { BirthdateComponent } from './birthdate/birthdate.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { MessageService } from './message.service';
     AppComponent,
     BeersComponent,
     BeerDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    RogerComponent,
+    BirthdateComponent
   ],
   imports: [
     BrowserModule,
