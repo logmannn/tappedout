@@ -6,10 +6,8 @@ import { AppComponent } from './app.component';
 import { BeersComponent } from './beers/beers.component';
 import { BeerDetailComponent } from './beer-detail/beer-detail.component';
 import { BeerService } from './beer.service';
-import { MessagesComponent } from './messages/messages.component';
-import { MessageService } from './message.service';
-import { RogerComponent } from './roger/roger.component';
 import { BirthdateComponent } from './birthdate/birthdate.component';
+import { StartScreenComponent } from './start-screen/start-screen.component';
 
 
 @NgModule({
@@ -17,17 +15,15 @@ import { BirthdateComponent } from './birthdate/birthdate.component';
     AppComponent,
     BeersComponent,
     BeerDetailComponent,
-    MessagesComponent,
-    RogerComponent,
-    BirthdateComponent
+    BirthdateComponent,
+    StartScreenComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [
-    BeerService,
-    MessageService
+    BeerService
   ],
   bootstrap: [AppComponent]
 })

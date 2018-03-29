@@ -1,34 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
 
-.over21image {
-  width: 100%;
-  background-image: url('https://files.slack.com/files-pri/T8M843NBB-F9YNJAJGN/epicodus2.png');
-  height: 100%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.twentyone {
-  background-color: black;
-  width: 50%;
-  min-width: 350px;
-  max-width: 650px;
-  height: 400px;
-  display: table;
-  margin: 0 auto;
-  margin-top: -17em;
-  top: 50%;
-  position: relative;
-  z-index: 10;
-}
-
-.twentyone h2 {
-  color: white;
-  text-align: center;
-  font-size: 50px;
-}
 
 h3, p{
   color:white;

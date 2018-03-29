@@ -1,0 +1,31 @@
+
+.over21image {
+  width: 100%;
+  background-image: url('/../assets/epicodus2.png');
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.twentyone {
+  background-color: black;
+  width: 50%;
+  min-width: 350px;
+  max-width: 650px;
+  height: 300px;
+  display: table;
+  margin: 0 auto;
+  margin-top: -17em;
+  top: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+.twentyone h2 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
